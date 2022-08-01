@@ -1,4 +1,5 @@
 ﻿using FirstFormApp.Data;
+using FirstFormApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace FirstFormApp.Services
     {
         AppDbContext _context = new();
         
-        public void Add(Category category)
+        public void Add(Categoryy category)
         {
             _context.Categories.Add(category);
             _context.SaveChanges();

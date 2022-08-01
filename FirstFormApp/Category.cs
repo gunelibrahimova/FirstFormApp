@@ -1,4 +1,5 @@
-﻿using FirstFormApp.Services;
+﻿using FirstFormApp.Models;
+using FirstFormApp.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,9 +31,9 @@ namespace FirstFormApp
             {
                 try
                 {
-                    Category category = new()
+                    Categoryy category = new()
                     {
-                        Name = name,
+                        Name = name
                     };
                     _manager.Add(category);
                     MessageBox.Show("Category ugurla elave olundu");

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FirstFormApp.Models
 {
-    public class Category
+    public class Categoryy
     {
         public int Id { get; set; }
         public string Name { get; set; }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace FirstFormApp.Data
 {
-    internal class AppDbContext : DbContext
+    public class AppDbContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -16,7 +16,7 @@ namespace FirstFormApp.Data
         }
 
         public DbSet<User> Users { get; set; }
-        public DbSet<Category> Categories { get; set; }
+        public DbSet<Categoryy> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
 
     }

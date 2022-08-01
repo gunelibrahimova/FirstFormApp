@@ -21,8 +21,6 @@ namespace FirstFormApp
             InitializeComponent();
         }
 
-        
-
         private void Btnregister_Click(object sender, EventArgs e)
         {
             var name = TxtName.Text;
