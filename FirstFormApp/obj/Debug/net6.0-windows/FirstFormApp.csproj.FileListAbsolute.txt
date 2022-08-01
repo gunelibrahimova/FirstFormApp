@@ -49,3 +49,4 @@ C:\Users\HP\Desktop\Tasks\FirstFormApp\FirstFormApp\bin\Debug\net6.0-windows\run
 C:\Users\HP\Desktop\Tasks\FirstFormApp\FirstFormApp\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\HP\Desktop\Tasks\FirstFormApp\FirstFormApp\obj\Debug\net6.0-windows\FirstFormApp.csproj.CopyComplete
 C:\Users\HP\Desktop\Tasks\FirstFormApp\FirstFormApp\obj\Debug\net6.0-windows\FirstFormApp.Register.resources
+C:\Users\HP\Desktop\Tasks\FirstFormApp\FirstFormApp\obj\Debug\net6.0-windows\FirstFormApp.Category.resources

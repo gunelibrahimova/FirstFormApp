@@ -3,6 +3,7 @@ using FirstFormApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,8 +13,9 @@ namespace FirstFormApp.Services
     {
          AppDbContext context = new();
 
-        public void Register(User user)
+        public void Register(User user, string pass)
         {
+            user.Password= HashPassword(pass);
             context.Users.Add(user);
             context.SaveChanges();
         }
@@ -25,14 +27,22 @@ namespace FirstFormApp.Services
             if (user == null)
                 return null;
             
-            if (user.Password != password)
-                return user;
+            if (user.Password != HashPassword(password))
+                return null;
             return user;
         }
 
+        public string HashPassword(string password)
+        {
+            using HashAlgorithm hashAlgoritm = SHA256.Create();
+            byte[] hashData = hashAlgoritm.ComputeHash(Encoding.UTF8.GetBytes(password));
+            StringBuilder stringBuilder = new();
 
-
-
-
+            for (int i = 0; i < hashData.Length; i++)
+            {
+                stringBuilder.Append(hashData[i].ToString("x2"));
+            }
+            return stringBuilder.ToString();
+        }
     }
 }

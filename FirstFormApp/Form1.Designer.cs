@@ -34,6 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.Btnregister = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Btnlogin
@@ -99,11 +100,26 @@
             this.Btnregister.UseVisualStyleBackColor = false;
             this.Btnregister.Click += new System.EventHandler(this.Btnregister_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.IndianRed;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(309, 250);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(131, 44);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Category";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Btnregister);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -126,5 +142,6 @@
         private Label label1;
         private Label label3;
         private Button Btnregister;
+        private Button button1;
     }
 }

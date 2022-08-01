@@ -52,7 +52,7 @@ namespace FirstFormApp
                             Name = name,
                             Surname = surname,
                         };
-                        _authManager.Register(newUser);
+                        _authManager.Register(newUser, password);
                         MessageBox.Show("Qeydiyyatdan ugurla kecdiniz");
                         this.Close();
                     }
@@ -60,9 +60,10 @@ namespace FirstFormApp
                     {
                         MessageBox.Show("Xeta bas verdi yeniden cehd edin");
                     }
-                    
                 }
             }
         }
+
+
     }
 }
