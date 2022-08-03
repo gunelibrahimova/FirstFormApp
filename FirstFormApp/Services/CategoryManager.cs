@@ -17,5 +17,10 @@ namespace FirstFormApp.Services
             _context.Categories.Add(category);
             _context.SaveChanges();
         }
+
+        public List<Categoryy> GetAll()
+        {
+            return _context.Categories.ToList();
+        }
     }
 }
